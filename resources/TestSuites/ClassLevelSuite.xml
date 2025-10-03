@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Postman Smoke Suite">
+
+        <listeners>
+            <listener class-name="utils.RetryListener"/>
+        </listeners>
+
+        <test name="Authorization Testcases">
+        <classes>
+            <class name="Postman.PostManAuthorization"/>
+            <class name="userManagement.CRUDOperations"/>
+        </classes>
+    </test>
+</suite>

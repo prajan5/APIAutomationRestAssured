@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Postman and Regresin Smoke Suite">
+    <test name="Authorization Testcases">
+        <packages>
+            <package name="Postman"/>
+            <package name="userManagement"/>
+        </packages>
+    </test>
+</suite>

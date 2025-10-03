@@ -1,0 +1,31 @@
+{
+  "Student": {
+    "rollno": "001",
+    "name": "Spelender"
+},
+  "Courses": [
+    {
+      "title": "Selenium Python",
+      "fee": 50
+          },
+    {
+      "title": "Cypress",
+      "fee": 40
+
+    },
+    {
+      "title": "RPA",
+      "Fee": 45
+    }
+  ],
+  "Technology": [
+    "Microservices",
+    "Data Analyst"
+  ],
+  "Marks": [60,50,40],
+  "Contact": [
+    "Email: Ramya@gmail.cpm",
+    "location: India",
+    "phone: 34123456789"
+  ]
+}

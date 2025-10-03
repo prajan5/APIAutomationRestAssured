@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Postman Regresin Smoke Suite">
+    <test name="User and Authorization Testcases">
+        <groups>
+            <run>
+                <include name="SmokeSuite"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="Postman"/>
+            <package name="userManagement"/>
+            <!--mention We need to mention classes or packages to pickup the test cases!-->
+        </packages>
+    </test>
+</suite>
