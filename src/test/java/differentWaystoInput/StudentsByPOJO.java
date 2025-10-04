@@ -18,7 +18,7 @@ public class StudentsByPOJO {
     String serverAddress = PropertyReader.propertyReader("./config.properties","serverStudent");
     String id;
 
-    @Test
+    @Test(description="serialization")
     void convertPOJOtoJSON() throws JsonProcessingException
     {
         PojoStudent stupojo = new PojoStudent(); // java object
