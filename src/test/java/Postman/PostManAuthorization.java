@@ -58,7 +58,7 @@ public class PostManAuthorization extends BaseTest {
 
     }
 
-    @Test
+    @Test(description="to validate postman login")
     public void ValidateWithTestData_configurationFromJSON() throws IOException, ParseException {
         ExtentReport.extentlog = ExtentReport.extentreport.
                 startTest("ValidateWithTestData_configurationFromJSON", "Validate 201 status code for Post Method");
