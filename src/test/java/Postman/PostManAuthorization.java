@@ -58,7 +58,7 @@ public class PostManAuthorization extends BaseTest {
 
     }
 
-    @Test(description="to validate postman login")
+    @Test()
     public void ValidateWithTestData_configurationFromJSON() throws IOException, ParseException {
         ExtentReport.extentlog = ExtentReport.extentreport.
                 startTest("ValidateWithTestData_configurationFromJSON", "Validate 201 status code for Post Method");
@@ -71,8 +71,9 @@ public class PostManAuthorization extends BaseTest {
         String serverAddress = PropertyReader.propertyReader("./config.properties","serverPostman");
         //Concatenate ServerAddress and Endpoint
         String URL = serverAddress+endpoint;
-
+        //print the server address
         System.out.println(serverAddress);
+        //print the username and password
         System.out.println(username+":"+password);
 
         given()
