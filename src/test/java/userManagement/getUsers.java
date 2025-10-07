@@ -21,7 +21,7 @@ import static org.testng.Assert.assertEquals;
 
 public class getUsers {
 
-    @Test(groups="SmokeSuite")
+    @Test(dependsOnGroups = {"RegressionSuite","SmokeSuite"})
     public void  getUserData()
     {
         //To get the data from page 2
