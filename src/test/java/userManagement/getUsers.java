@@ -24,12 +24,15 @@ public class getUsers {
     @Test(groups="SmokeSuite")
     public void  getUserData()
     {
+        //To get the data from page 2
                  given().
                  when().get("https://reqres.in/api/users?page=2")
                 .then()
                 .assertThat().  //it will take integer value
-                 statusCode(200);
+                 statusCode(200);//get the status code
     }
+
+
 
 
     @Test(groups="RegressionSuite")
