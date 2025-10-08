@@ -30,7 +30,10 @@ public class Students {
                          .contentType("application/json")
                          .body(jsonObject.toString())
                 .when()
-                         .post(serverAddress);
+                         .post(serverAddress)
+                     .then()
+                     .statusCode(200)
+                     .extract().response();
 
 
        //Get the data from Json file(Requestbody)
