@@ -19,7 +19,7 @@ import static org.testng.Assert.assertEquals;
 
 public class Students {
     String testDataFile = "Students";
-    @Test
+    @Test(description="validate create student")
     public void testAddStudent() throws IOException, ParseException {
         //get the serverName
         String serverAddress = PropertyReader.propertyReader("./config.properties","serverStudent");
@@ -39,6 +39,7 @@ public class Students {
         String sPhone = JSONReaderGeneric.getTestData(testDataFile,"phone");
         JSONArray arrCourses  = JSONReaderGeneric.getJsonArray(testDataFile,"Courses");
         Object obj  = JSONReaderGeneric.getJsonArrayData(testDataFile,"Courses",0);
+
 
         //Compare the data from Response
         SoftAssertionUtil softassertion = new SoftAssertionUtil();
