@@ -19,7 +19,7 @@ import static org.testng.Assert.assertEquals;
 
 public class Students {
     String testDataFile = "Students";
-    @Test
+    @Test(description="testAddStudent")
     public void testAddStudent() throws IOException, ParseException {
         //get the serverName
         String serverAddress = PropertyReader.propertyReader("./config.properties","serverStudent");
