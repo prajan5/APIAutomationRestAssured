@@ -21,7 +21,7 @@ import static org.testng.Assert.assertEquals;
 
 public class getUsers {
 
-    @Test(dependsOnGroups = {"RegressionSuite","SmokeSuite"})
+    @Test(dependsOnGroups = {"RegressionSuite","SmokeSuite","EndToEndTest "})
     public void  getUserData()
     {
         //To get the data from page 2
@@ -120,7 +120,7 @@ public void validateResponsespecificstring()
 
     }
 
-    @Test
+    @Test(description="validateUsingResponseobject")
     public void validateUsingResponseobject()
     {
         baseURI = "https://reqres.in/api";
@@ -155,7 +155,7 @@ public void validateResponsespecificstring()
 
 
 
-//@Test
+//@Test(description="validateAlltheFieldsFirstObject"
     public void  validateAlltheFieldsFirstObject()
     {
         baseURI="https://reqres.in/api";
@@ -180,7 +180,7 @@ public void validateResponsespecificstring()
 
     }
 
-    @Test
+    @Test(description="validateDateFromPropertyFile")
     public void  validateDateFromPropertyFile()
     {
         String serverAddress = PropertyReader.propertyReader("./config.properties","serverRegressin");
