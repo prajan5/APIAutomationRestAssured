@@ -14,9 +14,9 @@ public class BuilderImplementation {
 
     public RequestSpecification requestSpec;
     public ResponseSpecification responseSpec;
-    Sting token = "39d9383102f2c793e85ac9527291aff1d3504a5a277a4ae39f5a9d333cc55733";
+    String token = "39d9383102f2c793e85ac9527291aff1d3504a5a277a4ae39f5a9d333cc55733";
 
-    @Test
+    @Test(description="specbuilderGetRequest")
     public void testgetRequest()
     {
 
