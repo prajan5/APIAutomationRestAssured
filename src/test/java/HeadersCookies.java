@@ -57,6 +57,7 @@ public class HeadersCookies {
                 .extract()
                 .response();
         System.out.println(response.getHeaders());
+        System.out.println(response.statusCode);
         //System.out.println(response.asPrettyString());
 
 
