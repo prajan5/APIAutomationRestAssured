@@ -14,12 +14,13 @@ public class BuilderImplementation {
 
     public RequestSpecification requestSpec;
     public ResponseSpecification responseSpec;
+    Sting token = "39d9383102f2c793e85ac9527291aff1d3504a5a277a4ae39f5a9d333cc55733";
 
     @Test
     public void testgetRequest()
     {
 
-        String token = "39d9383102f2c793e85ac9527291aff1d3504a5a277a4ae39f5a9d333cc55733";
+     
         requestSpec = getRequestSpecificationBuilder(token,8164474,"application/json");
         responseSpec = getResponseSpecificationBuilder(200,"application/json");
 
@@ -32,7 +33,7 @@ public class BuilderImplementation {
               .extract().response();
 
 
-        //assertEquals(getResponse.getStatusCode(), StatusCode.SUCCESS.code);
+        assertEquals(getResponse.getStatusCode(), StatusCode.SUCCESS.code);
         System.out.println(getResponse.getBody().jsonPath().getString("status"));
         System.out.println("get request successfully executed ");
     }
